@@ -5,7 +5,7 @@ export class OpenAIProvider implements AIProvider {
   private openai: OpenAI;
   private model: string;
 
-  constructor(apiKey: string, model: string = 'gpt-3.5-turbo') {
+  constructor(apiKey: string, model: string = 'gpt-4.1') {
     if (!apiKey) {
       throw new Error('OpenAI API key is required');
     }
